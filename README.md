@@ -1,4 +1,7 @@
-# carprice
+# Car Pirce Prediction - Model Selector based on the given data
+
+This code reads a car price dataset from a CSV file and performs <b>data cleaning and pre-processing</b> on it using the pandas library in Python. It starts by renaming columns, replacing missing values with NaN, and converting data types of some columns. The code then performs exploratory data analysis (EDA) by checking the basic statistics, shape, and unique values of the dataset. After EDA, the code removes missing values in the dataset, and fills them using mean and linear regression for some columns. Finally, the code creates a correlation matrix plot to visualize the correlation between different columns of the dataset.
+
 This code is written in Python using Pandas, Scikit-Learn, and XGBoost libraries for machine learning. The code loads a dataset from a CSV file and performs feature selection, data scaling, and model training using several regression algorithms. The goal is to evaluate and compare the performance of different regression algorithms on the dataset and select the best one using grid search.
 
 The dataset is loaded from the 'reg_data.csv' file using the Pandas library. Then, the correlation between the 'price' feature and each of the other features is computed using the 'corr' function of the Pandas DataFrame. This is done to identify the features that are most correlated with the target variable and could potentially have the most significant impact on the model's performance.
